@@ -5,7 +5,7 @@ from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
 from PIL import Image
 
-# 检查是否有可用的 GPU，如果没有则使用 CPU
+# 检查是否有可用的 GPU，如果没有则使用 CPU.
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # CNN 模型定义   
